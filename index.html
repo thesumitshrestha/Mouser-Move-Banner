@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Friday Banner</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/javascript" src="main.js"></script>
+
+</head>
+<body>
+<section>
+    <h2> Black <br> <span> Friday </span></h2>
+    <div class="black"></div>
+</section>
+<script>
+    const black_color = document.querySelector('.black');
+    window.onmousemove = function (e) {
+        const y = e.clientY;
+        black_color.style.top = y + 'px';
+    }
+
+</script>
+
+</body>
+</html>
